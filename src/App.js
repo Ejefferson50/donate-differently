@@ -1,26 +1,65 @@
 import React from 'react';
-import logo from './logo.svg';
+import { AmplifyAuthenticator, AmplifySignUp, AmplifySignIn } from '@aws-amplify/ui-react';
 import './App.css';
+import MyAmplifyTheme from './MyAmplifyTheme.js';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AmplifyAuthenticator usernameAlias="email">
+      <AmplifySignUp
+        slot="sign-up"
+        usernameAlias="email"
+        formFields={[
+          {
+            type: "given_name",            
+            placeholder: "First Name",
+            required: true,
+          },
+          {
+            type: "family_name",            
+            placeholder: "Last Name",
+            required: true,
+          },
+          {
+            type: "email",  
+            label: "",          
+            placeholder: "Email Address",
+            required: true,
+          },
+          {
+            type: "phone_number", 
+            label: "",           
+            placeholder: "Phone Number (optional)",
+            required: false,
+          },
+          {
+            type: "password", 
+            label: "",           
+            placeholder: "Password",
+            required: true,
+          }          
+        ]} 
+      />
+      <AmplifySignIn 
+      headerText="Login"
+      slot="sign-in" 
+      usernameAlias="email"
+      formFields={[        
+        {
+          type: "email",
+          label: "",            
+          placeholder: "Email Address",
+          required: true,
+        },        
+        {
+          type: "password",
+          label: "",            
+          placeholder: "Password",
+          required: true,
+        }          
+      ]}  />
+    </AmplifyAuthenticator>
   );
-}
+};
 
 export default App;
