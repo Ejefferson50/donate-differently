@@ -1,0 +1,29 @@
+.welcome{
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    display: block;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: #645FCD;
+    border: none;
+    border-radius: 25px;
+    margin-left: 25%;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-right: 20px;
+    padding-left: 20px;
+    }
+    
+    .welcome:hover{
+        background-color: #645FCD;
+    }
+    
+    .welcome:active{
+        background-color: #818285;
+        transform: translateY(4px)
+    }

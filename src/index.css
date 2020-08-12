@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+* {
+  box-sizing: border-box; 
+  font-size: 1em;
+}
+
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+ width: 550px;
+ height: 445px;
+ align-content: center;
+ padding-top: 25px;
+    padding-left: 625px;
+
+
+}
+
+.auth-inner {
+  width: auto;
+  height: auto;
+  background: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all .3s;
+  
+}
