@@ -8,11 +8,26 @@ import awsmobile from './aws-exports';
 
 Amplify.configure(awsmobile);
 
+
+
+
+
+// import fonts
+import './assets/fonts/OpenSans-ExtraBold.ttf'
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
+);
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  rootElement
 );
 
 // If you want your app to work offline and load faster, you can change
