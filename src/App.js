@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Welcome from "./components/WelcomeContainer/Welcome.js";
 import Login from "./components/LoginContainer/Login.js"
+import Feed from "./components/FeedContainer/Feed.js";
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={Welcome}/>
         <Route path="/log-in" component={Login} />
-        {/* <Route path="/feed" component={Feed} /> */}
+        <Route path="/feed" component={Feed} />
         {/* <Route path="/forgotpw" component={ForgotPassword} /> */}
         {/* <Route path="/menu" component={Menu} /> */}
       </Switch>
