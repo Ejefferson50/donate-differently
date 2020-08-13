@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { AmplifyAuthenticator, AmplifySignUp, AmplifySignIn } from '@aws-amplify/ui-react';
 import './App.css';
 import MyAmplifyTheme from './MyAmplifyTheme.js';
@@ -62,6 +63,7 @@ const App = () => {
       ]}  />
       <DonationTester/>
     </AmplifyAuthenticator>
+
   );
 };
 
