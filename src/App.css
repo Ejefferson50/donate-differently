@@ -1,12 +1,13 @@
+
 :root {
   --amplify-font-family: ‘Amazon Ember’;
-  --amplify-primary-color: #ff6347;
-  --amplify-primary-tint:  #ff7359;
-  --amplify-primary-shade: #e0573e;
-  --amplify-secondary-color: #152939;    
-  --amplify-secondary-tint:	#31465f;
-  --amplify-secondary-shade:#1F2A37;
-  --amplify-tertiary-color:	#5d8aff;
+  --amplify-primary-color:    #ff6347;
+  --amplify-primary-tint:     #ff7359;
+  --amplify-primary-shade:    #e0573e;
+  --amplify-secondary-color:  #152939;    
+  --amplify-secondary-tint: 	#31465f;
+  --amplify-secondary-shade:  #1F2A37;
+  --amplify-tertiary-color: 	#5d8aff;
 }
 
 /* Logo Colors
